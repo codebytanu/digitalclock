@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Choose Your Theme</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- CLICK SOUND ONLY -->
+  <audio id="click-sound" src="mouseclick.mp3" preload="auto"></audio>
+
+  <div class="wrapper">
+    <h1>CHOOSE YOUR THEME</h1>
+    <div class="theme-grid">
+      <div class="card" data-href="tang.html">
+        <img src="tang.png" alt="Tangerine Mint Icon">
+        <span>TANGERINE MINT</span>
+      </div>
+      <div class="card" data-href="velvet.html">
+        <img src="velvet.png" alt="Velvet Rose Icon">
+        <span>VELVET ROSE</span>
+      </div>
+      <div class="card" data-href="sakura.html">
+        <img src="sakura.png" alt="Sakura Moss Icon">
+        <span>SAKURA MOSS</span>
+      </div>
+      <div class="card" data-href="mocha.html">
+        <img src="mocha.png" alt="Mocha Drizzle Icon">
+        <span>MOCHA DRIZZLE</span>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const clickSound = document.getElementById('click-sound');
+    const cards = document.querySelectorAll('.card');
+
+    cards.forEach(card => {
+      card.addEventListener('click', () => {
+        // Make sure the audio plays instantly
+        clickSound.pause();
+        clickSound.currentTime = 0;
+        clickSound.play().catch((err) => {
+          console.log("Playback failed:", err);
+        });
+
+        // Redirect shortly after the sound
+        const url = card.getAttribute('data-href');
+        setTimeout(() => {
+          window.location.href = url;
+        }, 150);
+      });
+    });
+  </script>
+</body>
+</html>

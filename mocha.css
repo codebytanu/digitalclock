@@ -1,0 +1,93 @@
+/* Base Mocha theme */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to bottom right, #92736C, #a1867e);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  gap: 20px;
+}
+
+/* Switch Button */
+#theme-toggle {
+  padding: 10px 20px;
+  background: #ED9BBD;
+  color: #500711;
+  border: none;
+  border-radius: 12px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+#theme-toggle:hover {
+  background: #FAD3E6;
+}
+
+/* Clock container */
+.container {
+  background: linear-gradient(to bottom right, #FDF1F5, #f8e3ea);
+  padding: 40px 60px;
+  border-radius: 30px;
+  box-shadow:
+    0 0 25px rgba(253, 241, 245, 0.8),
+    0 8px 30px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Icon */
+.icon {
+  width: 150px;
+  height: auto;
+}
+
+/* Time */
+#time {
+  font-size: 64px;
+  font-weight: 700;
+  color: #6B4843;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Date */
+#date {
+  font-size: 22px;
+  font-weight: 500;
+  color: #8A5F5A;
+}
+
+/* Dropdown */
+#timezone {
+  margin-top: 10px;
+  padding: 10px 14px;
+  font-size: 16px;
+  border-radius: 12px;
+  border: 2px solid #ED9BBD;
+  background: #FDE5EC;
+  color: #500711;
+  font-family: 'Segoe UI', sans-serif;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#timezone:hover {
+  background: #FAD3E6;
+}
+
+#timezone:focus {
+  outline: none;
+  border-color: #ED9BBD;
+  box-shadow: 0 0 10px rgba(237, 155, 189, 0.5);
+}

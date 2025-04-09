@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Velvet Rose Clock</title>
+  <link rel="stylesheet" href="velvet.css" />
+</head>
+<body>
+  <button id="theme-toggle">Switch</button>
+  <audio id="click-sound" src="mouseclick.mp3" preload="auto"></audio>
+
+  <div class="container">
+    <img src="clock.png" alt="Clock Icon" class="icon" />
+    <div>
+      <div id="time">00:00:00</div>
+      <div id="date">Loading...</div>
+      <select id="timezone">
+        <option value="Asia/Kolkata">🇮🇳 India (IST)</option>
+        <option value="UTC">🌐 UTC</option>
+        <option value="America/New_York">🇺🇸 New York (EST)</option>
+        <option value="Europe/London">🇬🇧 London (GMT)</option>
+        <option value="Asia/Tokyo">🇯🇵 Tokyo (JST)</option>
+        <option value="Australia/Sydney">🇦🇺 Sydney (AEST)</option>
+      </select>
+    </div>
+  </div>
+
+  <script src="velvet.js"></script>
+</body>
+</html>

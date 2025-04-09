@@ -1,0 +1,79 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #ED9BBD;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 20px;
+  }
+  
+  /* Theme switch button */
+  #theme-toggle {
+    padding: 10px 20px;
+    background: #fff;
+    color: #500711;
+    border: none;
+    border-radius: 12px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+  }
+  
+  #theme-toggle:hover {
+    background: #f3b1c7;
+  }
+  
+  .container {
+    background: #500711;
+    padding: 2rem 3rem;
+    border-radius: 2rem;
+    box-shadow: 0 0 25px #500711aa;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+  
+  .icon {
+    width: 150px;
+  }
+  
+  #time {
+    font-size: 4rem;
+    font-weight: bold;
+  }
+  
+  #date {
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
+  }
+  
+  select {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: 2px solid #ED9BBD;
+    border-radius: 12px;
+    background: #ED9BBD;
+    color: #500711;
+    font-weight: bold;
+    font-family: 'Segoe UI', sans-serif;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: 0.3s ease all;
+  }
+  
+  select:hover {
+    background: #f3b1c7;
+    border-color: #e694af;
+  }
+  
+  select:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(237, 155, 189, 0.6);
+    border-color: #e46a94;
+  }
+  

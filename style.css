@@ -1,0 +1,58 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-family: 'Segoe UI', sans-serif;
+    background: #cbeaff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .wrapper {
+    text-align: center;
+  }
+  
+  h1 {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1.5rem;
+    color: #002244;
+    margin-bottom: 2rem;
+  }
+  
+  .theme-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 150px);
+    gap: 1.5rem;
+    justify-content: center;
+  }
+  
+  .card {
+    background: #fefefe;
+    border: 3px solid #002244;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    box-shadow: 4px 4px 0 #002244;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .card img {
+    width: 64px;
+    height: 64px;
+    image-rendering: pixelated;
+    margin-bottom: 0.5rem;
+  }
+  
+  .card span {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 0.6rem;
+    color: #002244;
+    display: block;
+  }
+  
